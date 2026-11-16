@@ -1,0 +1,47 @@
+schema_version = 1
+name = "Monochrome"
+description = "Sharp corners, single-pixel borders and instant-feeling motion."
+author = "HyprStudio"
+
+[appearance]
+rounding = 0
+border_size = 1
+active_border = "rgba(ffffffff)"
+inactive_border = "rgba(55555fff)"
+opacity = 1.0
+inactive_opacity = 1.0
+shadow_enabled = false
+blur_enabled = false
+gaps_in = 2
+gaps_out = 4
+
+[animations]
+enabled = true
+
+[[animations.curves]]
+name = "hs_quick"
+type = "bezier"
+x1 = 0.15
+y1 = 0.0
+x2 = 0.1
+y2 = 1.0
+
+[[animations.rules]]
+leaf = "windows"
+enabled = true
+speed = 2.0
+curve = "hs_quick"
+style = "popin 95%"
+
+[[animations.rules]]
+leaf = "workspaces"
+enabled = true
+speed = 2.0
+curve = "hs_quick"
+style = "slide"
+
+[[animations.rules]]
+leaf = "fade"
+enabled = true
+speed = 1.5
+curve = "hs_quick"

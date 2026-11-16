@@ -1,0 +1,68 @@
+schema_version = 1
+name = "Neon"
+description = "Vibrant cyan-to-magenta gradient borders, strong glow and expressive motion."
+author = "HyprStudio"
+
+[appearance]
+rounding = 14
+border_size = 2
+active_border = "rgba(00e5ffff) rgba(ff00e5ff) 45deg"
+inactive_border = "rgba(19191dff)"
+opacity = 0.95
+inactive_opacity = 0.9
+shadow_enabled = true
+shadow_range = 20
+shadow_render_power = 2
+shadow_color = "rgba(00e5ff55)"
+blur_enabled = true
+blur_size = 10
+blur_passes = 3
+blur_noise = 0.02
+blur_vibrancy = 0.35
+gaps_in = 5
+gaps_out = 10
+
+[animations]
+enabled = true
+
+[[animations.curves]]
+name = "hs_overshoot"
+type = "bezier"
+x1 = 0.4
+y1 = 1.35
+x2 = 0.3
+y2 = 1.0
+
+[[animations.curves]]
+name = "hs_smooth"
+type = "bezier"
+x1 = 0.25
+y1 = 0.1
+x2 = 0.25
+y2 = 1.0
+
+[[animations.rules]]
+leaf = "windows"
+enabled = true
+speed = 5.5
+curve = "hs_overshoot"
+style = "popin 70%"
+
+[[animations.rules]]
+leaf = "workspaces"
+enabled = true
+speed = 6.0
+curve = "hs_smooth"
+style = "slidefade 25%"
+
+[[animations.rules]]
+leaf = "fade"
+enabled = true
+speed = 4.0
+curve = "hs_smooth"
+
+[[animations.rules]]
+leaf = "border"
+enabled = true
+speed = 6.0
+curve = "hs_overshoot"

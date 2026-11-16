@@ -1,0 +1,42 @@
+[
+  {
+    "locked": false,
+    "mouse": false,
+    "release": false,
+    "repeat": false,
+    "longPress": false,
+    "non_consuming": false,
+    "auto_consuming": false,
+    "has_description": false,
+    "modmask": 64,
+    "submap": "",
+    "submap_universal": "false",
+    "key": "Escape",
+    "keycode": 0,
+    "catch_all": false,
+    "description": "",
+    "allow_input_capture": false,
+    "dispatcher": "HL.Dispatcher(exec_cmd)",
+    "arg": "7"
+  },
+  {
+    "locked": false,
+    "mouse": false,
+    "release": false,
+    "repeat": false,
+    "longPress": false,
+    "non_consuming": false,
+    "auto_consuming": false,
+    "has_description": false,
+    "modmask": 64,
+    "submap": "",
+    "submap_universal": "false",
+    "key": "Q",
+    "keycode": 0,
+    "catch_all": false,
+    "description": "",
+    "allow_input_capture": false,
+    "dispatcher": "HL.Dispatcher(close)",
+    "arg": "10"
+  }
+]

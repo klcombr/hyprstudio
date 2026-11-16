@@ -1,0 +1,17 @@
+# Build artifacts
+target/
+site/node_modules/
+site/dist/
+site/public/
+site/target/
+
+# Freebuff local metadata
+.freebuff/freebuff.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~

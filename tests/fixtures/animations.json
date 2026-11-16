@@ -1,0 +1,24 @@
+[
+  [
+    { "name": "quick", "X0": 0.15, "Y0": 0.0, "X1": 0.1, "Y1": 1.0 },
+    { "name": "linear", "X0": 0.0, "Y0": 0.0, "X1": 1.0, "Y1": 1.0 }
+  ],
+  [
+    {
+      "name": "windows",
+      "overridden": true,
+      "bezier": "quick",
+      "enabled": true,
+      "speed": 4.0,
+      "style": "popin 87%"
+    },
+    {
+      "name": "workspaces",
+      "overridden": true,
+      "bezier": "quick",
+      "enabled": true,
+      "speed": 5.0,
+      "style": "slide"
+    }
+  ]
+]

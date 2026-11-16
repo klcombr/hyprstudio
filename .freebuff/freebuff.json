@@ -1,0 +1,63 @@
+---
+gitlab: {}
+amis: {}
+monitor: []
+shell: []
+git:
+  repositories:
+    - "*"
+    - "**/*"
+  commit_domains: []
+  include_files: []
+  exclude_files:
+    - "**/.env"
+    - "**/.env.*.local"
+    - "*.log"
+    - "target/"
+  ignore_paths: []
+  incremental: []
+  diff_formats: []
+  external_user: {}
+  signatures: {}
+  deployments: []
+  states: {}
+  rate_limits: {}
+  oops: {}
+  telemetry: {}
+webapp:
+  user: null
+  user_email: null
+sessions:
+  active_sessions: []
+  duration: 2
+  remote_credentials: {}
+  host: ""
+option:
+  trail_enabled: true
+  agent_only: false
+  trail_options_disabled: false
+  output_location_parsed: "pushable"
+  intent_enabled: false
+  message_editable: true
+  message_submission_disabled: false
+  confirm_code_submission: true
+  wait_on_trailed_reply_final: false
+  run_powershell_from_actions_button: false
+  enable_prebuilt_app: false
+  enable_deployment: true
+  user_select: true
+  commitment_workflow_steps: []
+  commitment_workflow_active: false
+  commitment_workflow_active_session: ""
+  commitment_workflow_state: ""
+  consumption_last_calculated_at_seconds: null
+  query_budget: 200
+  commit_channels: 1000
+  committed_messages: null
+flows_builder:
+  app_settings: {}
+git:
+  repositories:
+    - "**/*"
+webapp:
+  owner_id: "0197fa33-79eb-7000-95a5-a36548c747b3"

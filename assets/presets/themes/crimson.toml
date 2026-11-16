@@ -1,0 +1,58 @@
+schema_version = 1
+name = "Crimson"
+description = "Black and red high-contrast desktop with deep shadows and crisp borders."
+author = "HyprStudio"
+
+[appearance]
+rounding = 10
+border_size = 2
+active_border = "rgba(ff3333ff)"
+inactive_border = "rgba(29292fff)"
+opacity = 0.97
+inactive_opacity = 0.92
+shadow_enabled = true
+shadow_range = 14
+shadow_render_power = 3
+shadow_color = "rgba(000000aa)"
+blur_enabled = true
+blur_size = 6
+blur_passes = 2
+gaps_in = 4
+gaps_out = 8
+
+[animations]
+enabled = true
+
+[[animations.curves]]
+name = "hs_out"
+type = "bezier"
+x1 = 0.23
+y1 = 1.0
+x2 = 0.32
+y2 = 1.0
+
+[[animations.rules]]
+leaf = "windows"
+enabled = true
+speed = 4.0
+curve = "hs_out"
+style = "popin 87%"
+
+[[animations.rules]]
+leaf = "workspaces"
+enabled = true
+speed = 5.0
+curve = "hs_out"
+style = "slide"
+
+[[animations.rules]]
+leaf = "fade"
+enabled = true
+speed = 3.0
+curve = "hs_out"
+
+[[animations.rules]]
+leaf = "border"
+enabled = true
+speed = 5.0
+curve = "hs_out"

@@ -1,0 +1,47 @@
+schema_version = 1
+name = "Minimal"
+description = "Clean grayscale geometry with no shadows or blur. Made for focused work."
+author = "HyprStudio"
+
+[appearance]
+rounding = 6
+border_size = 2
+active_border = "rgba(f2f2f2ff)"
+inactive_border = "rgba(29292fff)"
+opacity = 1.0
+inactive_opacity = 1.0
+shadow_enabled = false
+blur_enabled = false
+gaps_in = 4
+gaps_out = 8
+
+[animations]
+enabled = true
+
+[[animations.curves]]
+name = "hs_quick"
+type = "bezier"
+x1 = 0.15
+y1 = 0.0
+x2 = 0.1
+y2 = 1.0
+
+[[animations.rules]]
+leaf = "windows"
+enabled = true
+speed = 3.0
+curve = "hs_quick"
+style = "fade"
+
+[[animations.rules]]
+leaf = "workspaces"
+enabled = true
+speed = 3.5
+curve = "hs_quick"
+style = "slide"
+
+[[animations.rules]]
+leaf = "fade"
+enabled = true
+speed = 3.0
+curve = "hs_quick"

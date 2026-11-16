@@ -1,0 +1,29 @@
+[
+  {
+    "id": 0,
+    "name": "eDP-1",
+    "description": "KDB 0x0526",
+    "make": "KDB",
+    "model": "0x0526",
+    "serial": "",
+    "width": 1920,
+    "height": 1080,
+    "physicalWidth": 340,
+    "physicalHeight": 190,
+    "refreshRate": 60.003,
+    "x": 0,
+    "y": 0,
+    "activeWorkspace": { "id": 2, "name": "2" },
+    "specialWorkspace": { "id": 0, "name": "" },
+    "reserved": [0, 29, 0, 0],
+    "scale": 1.5,
+    "transform": 0,
+    "focused": true,
+    "dpmsStatus": true,
+    "vrr": false,
+    "disabled": false,
+    "currentFormat": "XRGB8888",
+    "mirrorOf": "none",
+    "availableModes": ["1920x1080@60.00Hz"]
+  }
+]
